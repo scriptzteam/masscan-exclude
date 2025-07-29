@@ -1,4 +1,3 @@
-apt-get -qq install iptables ipset
 ipset -q flush masscan-exclude
 ipset -q create masscan-exclude hash:net
 for ip in $(curl --compressed https://raw.githubusercontent.com/scriptzteam/masscan-exclude/refs/heads/main/exclude.conf 2>/dev/null | cut -f 1); do ipset add masscan-exclude $ip; done
