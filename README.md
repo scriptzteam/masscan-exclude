@@ -6,7 +6,7 @@ The `exclude.sh` script is designed to help you exclude specific IP ranges from 
 
 The `exclude.conf` file is designed to help you exclude specific IP ranges from your Masscan scans.  `masscan 0.0.0.0/0 -p0-65535 --excludefile exclude.conf`
 
-These ranges include:
+Excluded ranges:
 - 🔒 Private IPs
 - 🌐 Reserved IPs
 - 🕸️ Bogon IPs
