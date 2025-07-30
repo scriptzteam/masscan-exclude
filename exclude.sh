@@ -1,3 +1,4 @@
+# --- IPv4 setup ---
 ipset -q flush masscan-exclude-v4
 ipset -q create masscan-exclude-v4 hash:net family inet
 
